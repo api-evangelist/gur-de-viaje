@@ -1,7 +1,12 @@
 aid: gur-de-viaje
 name: Gurú de Viaje
-description: Gurú de Viaje is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Gurú de Viaje is a Mexico-based travel-deals company and flight-deal hunter ("cazador de ofertas
+  de viaje") that publishes daily cheap-flight promotions and airfare offers so travelers can fly cheaply and
+  see the world. Its Spanish-language consumer website and mobile/push experience surface daily discounted
+  airline tickets and travel promotions, with a focus on departures from Mexican cities such as Guadalajara
+  and Mexico City. Surfaced as a portfolio company of 500 Global and added to the API Evangelist network. As
+  of this pass Gurú de Viaje operates a consumer Next.js web property (gurudeviaje.com) and publishes no public
+  developer program, API reference, or machine-readable API specification.
 url: https://raw.githubusercontent.com/api-evangelist/gur-de-viaje/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +14,29 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://gurudeviaje.com/favicon.ico
 tags:
 - Company
+- Travel
+- Flights
+- Travel Deals
+- Airfare
+- Mexico
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gur-de-viaje-domain-security.yml
 - type: Website
   url: https://gurudeviaje.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
